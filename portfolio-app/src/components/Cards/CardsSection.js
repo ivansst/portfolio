@@ -4,6 +4,8 @@ import Card from "./Card";
 import "./CardsSection.css";
 
 function CardsSection() {
+  let api = process.env.REACT_APP_API_URL;
+  console.log(api);
   const [cards, setCards] = useState([]);
 
   const fetchProjects = () => {
@@ -11,7 +13,7 @@ function CardsSection() {
     axios.defaults.headers.common.Authorization = token;
 
     axios
-      .get("https://localhost:44381/projects/getall", { token })
+      .get(`${api}/projects/getall`, { token })
       .then((response) => {
         setCards(response.data);
       })

@@ -3,7 +3,7 @@ import axios from "axios";
 import "./Comments.css";
 
 export default function Comments(props) {
-  let api = "https://localhost:44381";
+  let api = process.env.REACT_APP_API_URL;
   let token = `bearer ${localStorage.getItem("token")}`;
   axios.defaults.headers.common.Authorization = token;
 

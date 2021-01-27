@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { useHistory, useLocation } from "react-router";
 import axios from "axios";
 import "./Login.css";
-import { Link, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Login() {
+  let api = process.env.REACT_APP_API_URL;
   let object = { userName: "", password: "" };
   const [form, setForm] = useState(object);
   const history = useHistory();
@@ -12,21 +13,19 @@ export default function Login() {
 
   const loginHandle = (event) => {
     event.preventDefault();
-    axios
-      .post("https://localhost:44381/Identity/Login", form)
-      .then((response) => {
-        localStorage.setItem("token", response.data);
+    axios.post(`${api}/Identity/Login`, form).then((response) => {
+      localStorage.setItem("token", response.data);
 
-        if (location.state == undefined) {
-          window.location.href = "/";
-        }
+      if (location.state == undefined) {
+        window.location.href = "/";
+      }
 
-        if (location.state.from !== "/register") {
-          history.goBack();
-        } else {
-          window.location.href = "/";
-        }
-      });
+      if (location.state.from !== "/register") {
+        history.goBack();
+      } else {
+        window.location.href = "/";
+      }
+    });
   };
 
   return (

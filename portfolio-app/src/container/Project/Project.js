@@ -7,9 +7,9 @@ import axios from "axios";
 import Navbar from "../../components/Navbar/Navbar";
 
 export default function Project() {
+  let api = process.env.REACT_APP_API_URL;
   let { id } = useParams();
 
-  let api = "https://localhost:44381";
   let token = `bearer ${localStorage.getItem("token")}`;
   axios.defaults.headers.common.Authorization = token;
 

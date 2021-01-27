@@ -4,17 +4,16 @@ import axios from "axios";
 import "./Register.css";
 
 export default function Register() {
+  let api = process.env.REACT_APP_API_URL;
   let object = { userName: "", email: "", password: "" };
   const [form, setForm] = useState(object);
   const [isSuccessful, setIsSuccessful] = useState(false);
 
   const registerHandle = (event) => {
     event.preventDefault();
-    axios
-      .post("https://localhost:44381/Identity/Register", form)
-      .then((response) => {
-        setIsSuccessful(true);
-      });
+    axios.post(`${api}/Identity/Register`, form).then((response) => {
+      setIsSuccessful(true);
+    });
   };
 
   return (
