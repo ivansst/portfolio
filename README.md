@@ -30,25 +30,27 @@ JavaScript
 Axios
 
 ## Development stages
-### BackEnd
+### BackEnd:
 - Figure out DB design
 - Initial setup of .NET project
 - Authentication using JWT and Identity
 - Implementation of Services, Models and Controllers
 
 ### FrontEnd
-#### Design the components of the main page
-    -Navbar
-    -HeroSection
-    -Experience
-    -CardsSection
-#### Design Login and Register pages
-#### Implement requests for
-     -CardsSection (get)
-     -Login (post)
-     -Register (post)
-     -Projects (get)
-     -Comments (get, delete and create)
+#### Design the components of the main page:
+     Navbar
+     HeroSection
+     Experience
+     CardsSection
+     
+#### Design Login and Register pages.
+
+#### Implement requests for:
+     CardsSection (get)
+     Login (post)
+     Register (post)
+     Projects (get)
+     Comments (get, delete and create)
 
 ## Initial setup
 ### BackEnd
@@ -57,17 +59,17 @@ Using Visual Studio 2019 when you first build the application it automatically a
 The Initial migration creates 5 Projects, 1 User and 1 comment for the first project.
 
 #### Initial user data: 
-     -UserName: initialUser
-     -Password: initialPassword
+     UserName: initialUser
+     Password: initialPassword
      
 ### FrontEnd
 Navigate to *porfolio-app* and create **.env** file using the **.env.example** for reference.
 
 After your first BackEnd build copy the URL and paste it inside your **.env** file.
 
-#### Install inital dependencies (before first build)
-    -npm install
+#### Install inital dependencies (before first build):
+     npm install
 
-#### Build
-    -npm start
+#### Build:
+     npm start
 
