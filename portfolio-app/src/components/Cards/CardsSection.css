@@ -1,0 +1,26 @@
+.projects-container {
+  height: 90vh;
+}
+
+.card-list {
+  display: flex;
+  overflow-x: scroll;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+
+.card-text {
+  display: flex;
+  color: #17141d;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+
+@media screen and (max-device-width: 900px) {
+  .card-list {
+    flex-wrap: wrap;
+    overflow-x: scroll;
+  }
+}

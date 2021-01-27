@@ -1,0 +1,62 @@
+.custom-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #17141d;
+  color: white;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.custom-label {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.custom-input {
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.custom-btn {
+  padding: 10px;
+  color: white;
+  background-color: #62567a;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  border-radius: 10px;
+}
+
+.custom-btn:hover {
+  background-color: #332d3f;
+}
+
+.custom-heading {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.custom-text {
+  margin-top: 10px;
+}
+
+.custom-link {
+  color: aquamarine;
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  text-decoration: underline;
+}

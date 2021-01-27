@@ -1,0 +1,32 @@
+.hero-container {
+  display: flex;
+  font-family: inherit;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+  width: 100%;
+}
+
+.hero-information {
+  flex: 1;
+  color: #17141d;
+  opacity: 1;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+@media screen and (max-device-width: 900px) {
+  .hero-container {
+    flex-direction: column;
+  }
+}

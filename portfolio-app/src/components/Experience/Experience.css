@@ -1,0 +1,77 @@
+.experience-container {
+  background: #17141d;
+  display: flex;
+  height: 50vh;
+  width: 100%;
+}
+
+.work {
+  color: white;
+  width: 50%;
+  height: 100%;
+}
+
+.technologies {
+  color: white;
+  width: 50%;
+  height: 100%;
+}
+
+.line {
+  width: 0px;
+  height: 100%;
+  border: 0.5px solid #3e364e;
+}
+
+.title {
+  justify-content: center;
+  text-align: center;
+  margin-top: 3vh;
+  font-size: 2.5em;
+}
+
+ul {
+  list-style: none;
+  margin: auto;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 3vh;
+}
+
+.specifications {
+  margin-top: 1vh;
+  list-style: inside;
+}
+
+.list-technologies > li {
+  margin-bottom: 1vh;
+  font-size: 1.5em;
+}
+
+@media screen and (max-device-width: 960px) {
+  .experience-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  .line {
+    height: 0px;
+    width: 100%;
+    border: 0.5px solid #3e364e;
+  }
+
+  .list-technologies > li {
+    font-size: 1.3em;
+  }
+}
