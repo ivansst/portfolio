@@ -65,7 +65,7 @@ Navigate to *porfolio-app* and create **.env** file using the **.env.example** f
 
 After your first BackEnd build copy the URL and paste it inside your **.env** file.
 
-#### Install inital dependencies
+#### Install inital dependencies (before build)
     -npm install
 
 #### Build
